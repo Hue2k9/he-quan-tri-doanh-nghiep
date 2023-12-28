@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+  <!--ACTION-->
+  <record id="action_sv" model="ir.actions.act_window">
+    <field name="name">Xem thông tin</field>
+    <field name="res_model">huehm</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <!--MENUITEM-->
+  <menuitem id="menu_muc_goc" name="Quản trị doanh nghiệp">
+    <menuitem id="menu_muc_phong" name="Hoàng Minh Huệ">
+      <menuitem id="menu_muc_action" action="action_sv"/>
+    </menuitem>
+  </menuitem>
+
+  <!--TREE VIEW-->
+  <record model="ir.ui.view" id="view_sinhvien_tree">
+    <field name="name">sinhvien tree</field>
+    <field name="model">huehm</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="code"/>
+        <field name="address"/>
+        <field name="group"/>
+      </tree>
+    </field>
+  </record>
+  <!--FORM VIEW-->
+  <record id="view_sinhvien_form" model="ir.ui.view">
+    <field name="name">sinhvien form</field>
+    <field name="model">huehm</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <div>
+            <h1>
+              <field name="name" placeholder="Tên sinh viên" required="True"/>  
+            </h1>
+            <h2>
+              <field name="code" placeholder="Mã sinh viên" required="True"/> 
+              <field name="address" placeholder="Địa chỉ"/> 
+              <field name="group" placeholder="Nhóm"/> 
+            </h2>
+          </div>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  </data>
+</odoo>

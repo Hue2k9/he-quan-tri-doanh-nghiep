@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+          <record id="object0" model="huehm">
+            <field name="name">Hoàng Minh Huệ</field>
+            <field name="code">2020607477</field>
+            <field name="address">2023IT6061001</field>
+            <field name="group">Nhóm 1</field>
+          </record>
+
+         <record id="object1" model="huehm">
+            <field name="name">Nguyễn Thị Hoa</field>
+            <field name="code">2222222222</field>
+            <field name="address">Hà Nội</field>
+            <field name="group">Nhóm 2</field>
+          </record>
+         
+          <record id="object2" model="huehm">
+            <field name="name">Nguyễn Văn Hùng</field>
+            <field name="code">3333333333</field>
+            <field name="address">Hải Phòng</field>
+            <field name="group">Nhóm 3</field>
+          </record>
+    </data>
+</odoo>
