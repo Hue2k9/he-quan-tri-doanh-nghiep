@@ -25,3 +25,5 @@ class Student(models.Model):
         "tag_id",
         "Student Tags"
     )
+
+docker exec 4ae24024a183 /usr/bin/odoo scaffold HoclaptrinhOdoo /mnt/extra-addons
